@@ -1335,7 +1335,7 @@ padding-right: 6em;
         display: none;
         visibility: hidden;
     }    
-    
+
     .cards{    
         padding: 5px;
     }
@@ -1832,7 +1832,7 @@ padding-right: 6em;
     }
 
     .svc-desktop{
-        height: 70vh;
+        /* height: 70vh; */
     }
     
 }
