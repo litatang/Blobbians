@@ -1296,7 +1296,7 @@ padding-right: 6em;
 
 @media screen and (max-width: 575.98px) {
     .how-we-work-container, .get-started-container, .pagepiling-container{
-        padding-top: 2em;
+        padding-top: 3em;
     }
 
     .home-canwe-row, .home-about-row, .home-ourworks-row, .home-how-we-work-row{
@@ -1304,7 +1304,7 @@ padding-right: 6em;
     }
 
     .about-row {
-        height: 80%;
+        height: 85%;
     }
     
     .footer-social-media-image{
@@ -1413,7 +1413,9 @@ padding-right: 6em;
     .about-description {
         padding-right: 2em;
         padding-left: 2em;
+        margin-top: -4em;
     }
+
     .about-description-text{
         padding-left: 2em;
         padding-right: 2em;
