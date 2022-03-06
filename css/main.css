@@ -1293,6 +1293,10 @@ padding-right: 6em;
 }
 
 @media screen and (max-width: 575.98px) {
+    .how-we-work-container, .get-started-container, .pagepiling-container{
+        padding-top: 3em;
+    }
+    
     .home-canwe-row, .home-about-row, .home-ourworks-row, .home-how-we-work-row{
         height: 85%;
     }
