@@ -1294,7 +1294,7 @@ padding-right: 6em;
 
 @media screen and (max-width: 575.98px) {
     .home-canwe-row, .home-about-row, .home-ourworks-row, .home-how-we-work-row{
-        height: 80%;
+        height: 85%;
     }
     
     .footer-social-media-image{
