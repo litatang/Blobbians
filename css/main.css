@@ -616,11 +616,13 @@ padding-right: 6em;
     width: 14em;
 }
 
-.home-canwe-row, .home-about-row, .home-ourworks-row, .home-how-we-work-row{
+.home-canwe-row, .home-about-row, .home-ourworks-row, .home-how-we-work-row, .about-row {
     display: flex;
     align-items: center;
     height: 90%;
 }
+
+
 
 .service-row{
     /* display: flex; */
@@ -1300,6 +1302,10 @@ padding-right: 6em;
     .home-canwe-row, .home-about-row, .home-ourworks-row, .home-how-we-work-row{
         height: 85%;
     }
+
+    .about-row {
+        height: 80%;
+    }
     
     .footer-social-media-image{
         margin: 0 0.33em;
@@ -1365,11 +1371,11 @@ padding-right: 6em;
         margin: auto;
     }
 
-    .home-about-row {
+    .home-about-row, .about-row {
         padding-bottom: 2em;
         padding-top: 10vh;
-
     }
+
     .home-animate-image-col{
         padding-top: 10vh;
     }
@@ -1528,7 +1534,7 @@ padding-right: 6em;
     .ourworks-description{
         width: 100%;
     }
-    
+
     .about-character{
         width: 80vw;
     }
