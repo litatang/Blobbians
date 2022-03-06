@@ -1294,9 +1294,9 @@ padding-right: 6em;
 
 @media screen and (max-width: 575.98px) {
     .how-we-work-container, .get-started-container, .pagepiling-container{
-        padding-top: 3em;
+        padding-top: 2em;
     }
-    
+
     .home-canwe-row, .home-about-row, .home-ourworks-row, .home-how-we-work-row{
         height: 85%;
     }
@@ -1528,8 +1528,13 @@ padding-right: 6em;
     .ourworks-description{
         width: 100%;
     }
+    
     .about-character{
         width: 80vw;
+    }
+
+    .about-character-chen{
+        width: 70vw;
     }
     .desktop-only{
         display: none;
