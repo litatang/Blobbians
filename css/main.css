@@ -993,6 +993,7 @@ padding-right: 6em;
     transform: rotate(-3deg);
     transition: transform 0.5s ease-in-out; 
 }
+
 .cards:hover .layer{
     top: 15px;
     left: 15px;    
@@ -1288,13 +1289,68 @@ padding-right: 6em;
     text-decoration: none;
 }
 
+@media (pointer:coarse) {
+    .cards:hover {
+        transform: none;
+        transition: none;
+    }
+
+    .cards:hover .layer{
+        top: 15px;
+        left: 15px;    
+        height: calc(100% - 30px);
+        transition: none;
+    }
+
+    .cards:hover .layer-text{
+        display: none;
+    }    
+    .layer-text{
+        display: none;
+    }
+
+    .layer{
+        display: none;
+    }
+}
+
+
+
+
+
 @media screen and (max-height:850px){
     .home-ourworks-desc-text{
         display: none;
     }
 }
 
-@media screen and (max-width: 575.98px) {
+@media screen and (max-height:780px){
+    .home-scroll-down{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 575.98px) {    
+    .cards:hover .layer-text, .layer{
+        display: none;
+        visibility: hidden;
+    }    
+    
+    .cards{    
+        padding: 5px;
+    }
+    
+    .cards .layer {
+        top: calc(0% + 5px);	
+        width: calc(100% - 10px);
+    }
+    
+    .cards:hover .layer{
+        top: 5px;
+        left: 5px;    
+        height: calc(100% - 10px);
+    }
+    
     .how-we-work-container, .get-started-container, .pagepiling-container{
         padding-top: 3em;
     }
