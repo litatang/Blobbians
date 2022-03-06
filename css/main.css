@@ -1413,7 +1413,7 @@ padding-right: 6em;
     .about-description {
         padding-right: 2em;
         padding-left: 2em;
-        margin-top: -4em;
+        /* margin-top: -4em; */
     }
 
     .about-description-text{
