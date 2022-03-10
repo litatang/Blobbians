@@ -966,26 +966,23 @@ padding-right: 6em;
 .cards{
     display: inline-block;
     position: relative;
-    /* width: auto; */
-    /* height: auto; */
     overflow: hidden;
-    /* margin:0 auto; */
     background:#fff;
-    padding: 15px;
+    padding: 20px;
     box-sizing: border-box;
     text-align: center;
-    /* box-shadow:0 10px 40px rgba(0,0,0,.5) */
     transition: all 0.5s ease-in-out; 
     transform: none;
+    border-radius: 5px;
 }
 
 
 
 .cards .layer {
     position: absolute;
-    top: calc(0% + 15px);
+    top: calc(0% + 20px);
     height:0;
-    width: calc(100% - 30px);
+    width: calc(100% - 40px);
     background: #201d1d;
     transition: all 0.5s ease-out;
     display: flex;
@@ -1009,9 +1006,9 @@ padding-right: 6em;
 }
 
 .cards:hover .layer{
-    top: 15px;
-    left: 15px;    
-    height: calc(100% - 30px);      
+    top: 20px;
+    left: 20px;    
+    height: calc(100% - 40px);      
     transition: all 0.5s ease-in-out;       
 }
 
