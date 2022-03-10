@@ -202,19 +202,20 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script src="blobjs.js?version=14"></script>
+		<script src="js/wheel-indicator.js"></script>
 		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script type="text/javascript" src="js/slick.min.js"></script>
 
 		<script>
-			$(document).ready(function(){
-				$('.slick-service').slick({
-					vertical: false,
-					fade: true,
-					arrows: false,
-					dots: false,
-				});
-			});
+			// $(document).ready(function(){
+			// 	$('.slick-service').slick({
+			// 		vertical: false,
+			// 		fade: true,
+			// 		arrows: false,
+			// 		dots: false,
+			// 	});
+			// });
 
 			$(".prev").click(function(e) {
 				$(".slick-service").slick('slickPrev');
@@ -224,16 +225,44 @@
 				$(".slick-service").slick('slickNext');
 			});
 
-			$('.slick-service').on('wheel', (function(e) {
-				e.preventDefault();
+			// $('.slick-service').on('wheel', (function(e) {
+			// 	e.preventDefault();
 				
 
-				if (e.originalEvent.deltaY < 0) {
-					$(this).slick('slickPrev');
-				} else {
-					$(this).slick('slickNext');
+			// 	if (e.originalEvent.deltaY < 0) {
+			// 		$(this).slick('slickPrev');
+			// 	} else {
+			// 		$(this).slick('slickNext');
+			// 	}
+			// }));
+
+
+			var wheel, scrolling;
+			var $carousel = $('.slick-service');
+			$carousel.on('init', () => {
+				wheel = new WheelIndicator({
+					elem: $carousel[0],
+					callback: wheelHandler,
+				});
+			})
+			.on('beforeChange', () => {
+				scrolling = true;
+			})
+			.on('afterChange', () => {
+				scrolling = false;
+			})
+			.slick({
+				vertical: false,
+				fade: true,
+				arrows: false,
+				dots: false,
+			});
+			function wheelHandler(e) {
+				if (!scrolling) {
+					// console.log('Mouse wheel scroll:', e.direction);
+					$carousel.slick(e.direction === 'up' ? 'slickPrev' : 'slickNext');
 				}
-			}));
+			}
 		</script>
 
 		
