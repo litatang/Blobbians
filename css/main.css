@@ -1436,7 +1436,8 @@ padding-right: 6em;
     }
 
     .home-about-char, .about-header-image{
-        width: 70vw;
+        width: 60vw;
+        
         margin: auto;
     }
 
@@ -1460,6 +1461,7 @@ padding-right: 6em;
     .home-animate-image.text-in{
         display: inline-block;
         width: 70vw;
+        height: 30vh;
     }
 
     .home-animate-text.text-in{
@@ -1974,7 +1976,8 @@ padding-right: 6em;
 
     .home-animate-image.text-in{
         display: inline-block;
-        width: 50vw;
+        width: 30vw;
+        height: 35vh;
     }
 
     .home-about-char {
