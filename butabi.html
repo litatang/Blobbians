@@ -123,14 +123,14 @@
 
 			<div class="porto-navigation">
 				<div class="row porto-navigation-row">
-					<div class="order-2 order-xs-2 order-sm-2 order-md-1 order-xl-1 order-xxl-1 col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12 porto-navigation-arka porto-navigation-col">
+					<div data-link="arka.html" class="order-2 order-xs-2 order-sm-2 order-md-1 order-xl-1 order-xxl-1 col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12 porto-navigation-arka porto-navigation-col">
 						<img src="/images/footer-arka.png" class="img-fluid porto-navigation-image" />
 					</div>
-					<div class="order-3 order-xs-3 order-sm-3  order-md-2 order-xl-2 order-xxl-2 col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12 porto-navigation-layers porto-navigation-col">
+					<div data-link="littlelayers.html" class="order-3 order-xs-3 order-sm-3  order-md-2 order-xl-2 order-xxl-2 col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12 porto-navigation-layers porto-navigation-col">
 						<img src="images/footer-layers.png" class="img-fluid porto-navigation-image" />
 					</div>
 
-					<div class="order-1 order-xs-1 order-sm-1  order-md-3 order-xl-3 order-xxl-3 col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12 porto-navigation-arka porto-navigation-navigation">
+					<div data-link="arka.html" class="order-1 order-xs-1 order-sm-1  order-md-3 order-xl-3 order-xxl-3 col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12 porto-navigation-arka porto-navigation-navigation">
 						<a href="arka.html" class="porto-nav-link">
 							<div class="footer-prev ps-3">
 								<img class="me-2 prev-icon" src="./images/prev.png" style="transform: scale(0.8)">
@@ -139,7 +139,7 @@
 						</a>
 					</div>
 
-					<div class="order-4 order-xs-4 order-sm-4 order-md-4 order-xl-4 order-xxl-4 col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12  porto-navigation-layers porto-navigation-navigation porto-navigation-next">
+					<div data-link="littlelayers.html" class="order-4 order-xs-4 order-sm-4 order-md-4 order-xl-4 order-xxl-4 col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12  porto-navigation-layers porto-navigation-navigation porto-navigation-next">
 						<a href="littlelayers.html" class="porto-nav-link">
 							<div class="footer-next pe-3">								
 								<div class="me-2 text-light" style="display: inline-block">next project</div>								
@@ -228,7 +228,9 @@
 				})
 			})
 
-
+			document.querySelectorAll("[data-link]").forEach( el =>  {
+				el.addEventListener("click", () => window.location.href = el.dataset.link);
+			});
 			
 		</script>
 

@@ -630,14 +630,14 @@ padding-right: 6em;
     width: 14em;
 }
 
-.home-canwe-row, .home-about-row, .home-ourworks-row, .home-how-we-work-row, .about-row {
+.home-canwe-row, .home-about-row, .home-ourworks-row,  .about-row {
     display: flex;
     align-items: center;
     height: 90%;
     padding-top: 10vh;
 }
 
-.about-row {
+.home-how-we-work-row, .about-row {
     padding-top: 0;
 }
 
@@ -1001,7 +1001,7 @@ padding-right: 6em;
 }
 
 .cards:hover .layer-text{
-    padding-bottom: 2em;
+    padding-bottom: 5rem;
     display: block;    
 }
 
@@ -1196,12 +1196,14 @@ padding-right: 6em;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh
+    height: 50vh;
+    cursor: pointer;
 }
 
 .porto-navigation-navigation{
     height: 7vh;
     margin-top: -1em;
+    cursor: pointer;
 }
 
 .porto-navigation-setjang{
@@ -2096,6 +2098,7 @@ padding-right: 6em;
 }
 
 @media (min-width: 2500px) {
+  
     
     .ourworks-panel{
         padding-bottom: 25em;
@@ -2148,7 +2151,7 @@ padding-right: 6em;
     .get-started-header {    
         height: 32vh;
         margin-left: 15vw;
-        margin-top: 2vw;
+        /* margin-top: 2vw; */
     }
 
     .ourworks-image{
@@ -2187,16 +2190,24 @@ padding-right: 6em;
     .notfound-bg {
         width: 60vw;
     }
+    .ourworks-spark-header{
+        /* margin-top: 8em; */
+        height: 30vh;
+    }
 }
 
 @media (min-width: 3500px) {
+    .ourworks-spark-header{
+        margin-top: 8em;
+        height: 30vh;
+    }
     .ourworks-panel{
         padding-bottom: 40em;
     }
     .get-started-header {
-        margin-top: 8em;
+        /* margin-top: 8em; */
         margin-left: 15vw;
-        height: 25vh;
+        /* height: 25vh; */
     }
     .ourworks-footer {
         margin-top: -30em;
