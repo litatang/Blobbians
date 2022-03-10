@@ -636,6 +636,10 @@ padding-right: 6em;
     padding-top: 10vh;
 }
 
+.about-row {
+    padding-top: 0;
+}
+
 
 
 .service-row{
