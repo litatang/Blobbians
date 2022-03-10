@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/wedangs2/blobv2.theblobstudio.com/
+    - export DEPLOYPATH=/home/wedangs2/public_html
     - /bin/cp -R css $DEPLOYPATH
     - /bin/cp -R images $DEPLOYPATH
     - /bin/cp about.html $DEPLOYPATH
