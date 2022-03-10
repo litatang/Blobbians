@@ -115,15 +115,15 @@ document.querySelectorAll('.nav-menu-white-link').forEach(button => {
 
 });
 
-let timedelay = 1;
+// let timedelay = 1;
 
-function delayCheck() {
-  if (timedelay == 1) {
-    $('#customCursor').fadeOut();
-    timedelay = 1;
-  }
-  timedelay += 1;
-}
+// function delayCheck() {
+//   if (timedelay == 1) {
+//     $('#customCursor').fadeOut();
+//     timedelay = 1;
+//   }
+//   timedelay += 1;
+// }
 // $(document).mousemove(function() {
 //   $('#customCursor').fadeIn();
 //   timedelay = 1;
