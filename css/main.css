@@ -411,6 +411,7 @@ body {
 .home-animate-image.text-in{
     display: inline-block;
     width: 30vw;
+    height: 30vw;
     animation: textIn .7s ease;
 }
 
