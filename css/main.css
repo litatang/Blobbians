@@ -30,7 +30,7 @@ h3 {
 }
 
 p, .capsule-button-link {
-    font-size: clamp(1rem, 0.05rem + 1.05vw, 3rem);
+    font-size: clamp(0.95rem, 0.05rem + 1.05vw, 3rem);
 }
 
 .text-yellow{
@@ -919,7 +919,9 @@ padding-right: 6em;
     padding-right: 2em;
 }
 .ourworks-image{
-    /* border: 20px white solid; */
+    /* width: 25vw;
+    height: 25vw;
+    object-fit: contain; */
 }
 
 .small-text{
@@ -1342,13 +1344,10 @@ padding-right: 6em;
     }
 }
 
-@media screen and (max-height:780px) and (max-width: 575.98px){
-    .home-scroll-down{
-        display: none;
-    }
-}
+
 
 @media screen and (max-width: 575.98px) {    
+    
     .cards:hover .layer-text, .layer{
         display: none;
         visibility: hidden;
@@ -1823,6 +1822,24 @@ padding-right: 6em;
     }
 }
 
+@media screen and (max-height:780px) and (max-width: 575.98px){
+    .home-scroll-down{
+        display: none;
+    }
+
+    .ourworks-header-wave {
+        width: 100%;
+        height: auto;
+        margin-top: 20vh;
+    }
+    
+    .ourworks-header {
+        height: 20vh;
+        background-color: #fff;
+        padding-bottom: 37vh;
+        margin-top: 1em;
+    }
+}
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
     .svc-mobile{ display: block; }
@@ -2024,9 +2041,16 @@ padding-right: 6em;
         height: 35vh;
         margin-left: 14vw;
     }
+
+    .cards {
+        border-radius: 8px;
+    }
 }
 
 @media screen and (min-width: 1600px) and (max-width: 1899px) {
+    .cards {
+        border-radius: 10px;
+    }
     .nav-menu-yellow-link, .nav-menu-white-link{
         font-size: clamp(0.8rem, 0.1rem + 1.1vw, 3rem);        
         padding: 1.5em 0;
@@ -2052,7 +2076,9 @@ padding-right: 6em;
 }
 
 @media screen and (min-width: 1900px) and (max-width: 2499px) {
- 
+    .cards {
+        border-radius: 10px;
+    }
     .nav-menu-yellow-link, .nav-menu-white-link{
         font-size: clamp(0.8rem, 0.05rem + 1.1vw, 3.1rem);        
         padding: 1.5em 0;
@@ -2159,6 +2185,7 @@ padding-right: 6em;
     }
 
     .cards{    
+        border-radius: 15px;
         padding: 30px;
     }
     
@@ -2239,5 +2266,20 @@ padding-right: 6em;
         font-size: clamp(1rem, 0.05rem + 1.1vw, 3rem);
     }
     
+    .cards{    
+        border-radius: 20px;
+        padding: 40px;
+    }
+    
+    .cards .layer {
+        top: calc(0% + 40px);	
+        width: calc(100% - 80px);
+    }
+    
+    .cards:hover .layer{
+        top: 40px;
+        left: 40px;    
+        height: calc(100% - 80px);
+    }
 }
    
