@@ -630,11 +630,15 @@ padding-right: 6em;
     width: 14em;
 }
 
-.home-canwe-row, .home-about-row, .home-ourworks-row,  .about-row {
+.home-canwe-row, .home-about-row, .home-ourworks-row,  .about-row,.home-how-we-work-row {
     display: flex;
     align-items: center;
     height: 90%;
     padding-top: 10vh;
+}
+
+.home-canwe-row {
+    padding-top: 5vh;
 }
 
 .home-how-we-work-row, .about-row {
