@@ -645,6 +645,7 @@ padding-right: 6em;
     /* align-items: center; */
     padding-top: 16vh;
     height: 85%;
+    height: calc(var(--vh, 1vh) * 85);
 }
 
 .home-ourworks-row{
@@ -664,6 +665,7 @@ padding-right: 6em;
 
 .service-navigation{
     height: 15%;
+    height: calc(var(--vh, 1vh) * 15);
     display: flex;
     align-items: center;
     justify-content: space-between;
