@@ -160,11 +160,6 @@ body {
 	color:#fff;
 }
 
-.navbar-default.scrolled .navbar-nav > .active > a  {
-    /* background-color: transparent; */
-    /* color:#201d1d; */
-}
-
 
 .nav-logo-white{
     width: 8em; 
@@ -262,12 +257,6 @@ body {
     opacity: 1;
 } */
 
-
-
-
-.navbar-nav > .active > a { 
-    /* color: #201d1d ; */
-}
 
 .navbar-toggler,
 .navbar-toggler:focus,
@@ -746,13 +735,6 @@ padding-right: 6em;
     height: 40vh;
 }
 
-.ourworks-sparks-header{
-    /* margin-top: -3em; */
-    /* margin-left: 10em; */
-    /* padding-bottom: 3em; */
-    /* height: 40vh; */
-}
-
 .home-ourworks-img{
     width: 38vw;
     margin-left: -5em;
@@ -921,11 +903,6 @@ padding-right: 6em;
     top: 30%;
     left: 10%;
     padding-right: 2em;
-}
-.ourworks-image{
-    /* width: 25vw;
-    height: 25vw;
-    object-fit: contain; */
 }
 
 .small-text{
@@ -2034,12 +2011,7 @@ padding-right: 6em;
 
     .service-row{
         padding-top: 12vh;
-    }
-
-    .svc-desktop{
-        /* height: 70vh; */
-    }
-    
+    }    
 }
 
 @media screen and (min-width: 1400px) and (max-width: 1599px) {

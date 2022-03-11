@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="">
+		<meta name="theme-color" content="#46acc2">
 
 		<title>The Blob Studio</title>
 
@@ -17,7 +18,7 @@
 		<link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css"/>
 
 		<!-- Custom styles for this template -->
-		<link href="css/main.css?version=8" rel="stylesheet">
+		<link href="css/main.css?version=9" rel="stylesheet">
 		<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script> -->
 		<script src="https://kit.fontawesome.com/33be0d0b4d.js" crossorigin="anonymous"></script>
 	</head>
@@ -236,7 +237,6 @@
 			// 	}
 			// }));
 
-
 			var wheel, scrolling;
 			var $carousel = $('.slick-service');
 			$carousel.on('init', () => {
@@ -245,7 +245,15 @@
 					callback: wheelHandler,
 				});
 			})
-			.on('beforeChange', () => {
+			.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+				var currentSlide=$(slick.$slides.get(currentSlide));
+				var currentSlideIndex = currentSlide.attr("data-slick-index");
+				console.log(currentSlideIndex);
+				if(currentSlideIndex == 0){
+					document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#564D80');
+				} else {
+					document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#46acc2');
+				}
 				scrolling = true;
 			})
 			.on('afterChange', () => {
@@ -263,6 +271,8 @@
 					$carousel.slick(e.direction === 'up' ? 'slickPrev' : 'slickNext');
 				}
 			}
+
+			
 		</script>
 
 		
