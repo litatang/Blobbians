@@ -149,18 +149,20 @@ document.querySelector('.second-button').addEventListener('click', function () {
 
 
 var curColor;
-var myCollapsible = document.getElementById('navbarNav')
-myCollapsible.addEventListener('shown.bs.collapse', function () {	
-	document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#000000');
-	console.log(document.querySelector("meta[name=theme-color]").content);
+var myCollapsible = document.getElementById('navbarNav');
+myCollapsible.addEventListener('shown.bs.collapse', function () {		
+	setTimeout(function(){ 
+		document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#46acc2');
+	}, 350);
+	
 });
 
 myCollapsible.addEventListener('show.bs.collapse', function () {
 	curColor = document.querySelector("meta[name=theme-color]").content; 
-	console.log(curColor);
 });
 
 myCollapsible.addEventListener('hide.bs.collapse', function () {
-	document.querySelector('meta[name="theme-color"]').setAttribute('content',  curColor);
-	console.log(curColor);
+	setTimeout(function(){ 
+		document.querySelector('meta[name="theme-color"]').setAttribute('content',  curColor);
+	}, 175);		
 });
