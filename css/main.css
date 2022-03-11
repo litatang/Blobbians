@@ -501,7 +501,7 @@ padding-right: 6em;
 
 .capsule-button-container{
     margin: 3em 0 0 0.5em;
-    display: flex;
+    display: inline-flex;
     align-items: center;
 }
 
@@ -1434,7 +1434,7 @@ padding-right: 6em;
 
     .home-about-row {
         padding-bottom: 2em;
-        padding-top: 10vh;
+        padding-top: 15vh;
     }
 
     .about-row {
@@ -1451,8 +1451,8 @@ padding-right: 6em;
     }
     .home-animate-image.text-in{
         display: inline-block;
-        width: 70vw;
-        height: 30vh;
+        width: 16em;
+        height: 14em;
     }
 
     .home-animate-text.text-in{
