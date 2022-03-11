@@ -17,4 +17,5 @@ deployment:
     - /bin/cp service.html $DEPLOYPATH
     - /bin/cp setjang.html $DEPLOYPATH
     - /bin/cp 404.html $DEPLOYPATH
+    - /bin/cp blobjs.js $DEPLOYPATH
     # - /bin/cp -R js $DEPLOYPATH

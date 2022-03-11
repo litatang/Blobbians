@@ -588,6 +588,10 @@ padding-right: 6em;
 }
 
 
+.service-row{
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+}
 .contact-container{
     height: 100vh; /* Fallback for browsers that do not support Custom Properties */
     height: calc(var(--vh, 1vh) * 100);
@@ -636,7 +640,7 @@ padding-right: 6em;
 
 
 
-.service-row{
+.service-col{
     /* display: flex; */
     /* align-items: center; */
     padding-top: 16vh;
@@ -1728,7 +1732,7 @@ padding-right: 6em;
     .service-navigation{
         padding-top: 10vh;
     }
-    .service-row{
+    .service-col{
         padding-top: 2vh;
         padding-left: 3em;
         padding-right: 3em;
@@ -1981,7 +1985,7 @@ padding-right: 6em;
         /* height: 30vh; */
     }
 
-    .service-row{
+    .service-col{
         padding: 0 6em;
     }
     .svc-desktop { display: none; }
@@ -2009,7 +2013,7 @@ padding-right: 6em;
         width: 30vw;
     }
 
-    .service-row{
+    .service-col{
         padding-top: 12vh;
     }    
 }
