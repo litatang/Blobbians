@@ -315,11 +315,18 @@
                 //events                
                 onLeave: function(index, nextIndex, direction){
                     if(index == 2 && direction == 'up'){
-                        document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ffd23f');
+                        setTimeout(function(){ 
+                            document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ffd23f');
+                        }, 700);
+                        
                     } else if((index == 1 && direction =='down') || (index == 3 && direction =='up') || (index == 3 && direction =='down')){
-                        document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#46acc2');
+                        setTimeout(function(){ 
+                            document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#46acc2');
+                        }, 700);
                     } else if((index == 2 && direction == 'down') || (index == 4 && direction =='up')){
-                        document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#564D80');                        
+                        setTimeout(function(){ 
+                            document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#564D80');                        
+                        }, 700);
                     }
                 },
 	
