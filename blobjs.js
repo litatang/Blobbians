@@ -151,7 +151,8 @@ document.querySelector('.second-button').addEventListener('click', function () {
 var curColor;
 var myCollapsible = document.getElementById('navbarNav')
 myCollapsible.addEventListener('shown.bs.collapse', function () {	
-	document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#000');
+	document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#000000');
+	console.log(document.querySelector("meta[name=theme-color]").content);
 });
 
 myCollapsible.addEventListener('show.bs.collapse', function () {
