@@ -2118,6 +2118,10 @@ padding-right: 6em;
         height: 2.8em;
     }
 
+    .service-col{
+        padding-top: 6.5vh;
+    }
+
 }
 
 @media (min-width: 2500px) {
