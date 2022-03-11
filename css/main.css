@@ -843,7 +843,8 @@ padding-right: 6em;
     background-size: cover;
     background-position: top left;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
     overflow: hidden;
 }
 
