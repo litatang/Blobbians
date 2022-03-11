@@ -153,7 +153,7 @@ var myCollapsible = document.getElementById('navbarNav');
 myCollapsible.addEventListener('shown.bs.collapse', function () {		
 	setTimeout(function(){ 
 		document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#46acc2');
-	}, 350);
+	}, 175);
 	
 });
 
