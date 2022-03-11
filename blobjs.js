@@ -144,4 +144,22 @@ document.querySelectorAll('.nav-menu-white-link').forEach(button => {
 
 document.querySelector('.second-button').addEventListener('click', function () {
 	document.querySelector('.animated-icon2').classList.toggle('open');
+	var navbars = document.getElementById('navbarNav').classList		
+});
+
+
+var curColor;
+var myCollapsible = document.getElementById('navbarNav')
+myCollapsible.addEventListener('shown.bs.collapse', function () {	
+	document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#000');
+});
+
+myCollapsible.addEventListener('show.bs.collapse', function () {
+	curColor = document.querySelector("meta[name=theme-color]").content; 
+	console.log(curColor);
+});
+
+myCollapsible.addEventListener('hide.bs.collapse', function () {
+	document.querySelector('meta[name="theme-color"]').setAttribute('content',  curColor);
+	console.log(curColor);
 });
