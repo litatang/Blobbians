@@ -370,7 +370,7 @@ body {
 }
 
 .animate-image{
-    margin: 8em 8em;
+    margin: 8em 0;
     overflow: hidden;
     display: inline-block
 }
