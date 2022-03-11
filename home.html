@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
+    <meta name="theme-color" content="#ffd23f">
 
     <title>The Blob Studio</title>
 
@@ -311,8 +312,17 @@
                 sectionSelector: '.section',
                 animateAnchor: false,
 
-                //events
-                onLeave: function(index, nextIndex, direction){},
+                //events                
+                onLeave: function(index, nextIndex, direction){
+                    if(index == 2 && direction == 'up'){
+                        document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ffd23f');
+                    } else if((index == 1 && direction =='down') || (index == 3 && direction =='up') || (index == 3 && direction =='down')){
+                        document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#46acc2');
+                    } else if((index == 2 && direction == 'down') || (index == 4 && direction =='up')){
+                        document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#564D80');                        
+                    }
+                },
+	
                 afterLoad: function(anchorLink, index){},
                 afterRender: function(){},
             });
