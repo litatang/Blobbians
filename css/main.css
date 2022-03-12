@@ -1316,10 +1316,10 @@ padding-right: 6em;
     color: inherit;
 }
 
-/* .footer-number a {
+.footer-number a {
     text-decoration:none;
     color: inherit;
-} */
+}
 
 @media (pointer:coarse) {
     .cards:hover {
