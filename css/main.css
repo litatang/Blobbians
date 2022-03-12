@@ -1310,6 +1310,17 @@ padding-right: 6em;
     text-decoration: none;
 }
 
+.footer-number{
+    pointer-events: none;
+    text-decoration:none;
+    color: inherit;
+}
+
+/* .footer-number a {
+    text-decoration:none;
+    color: inherit;
+} */
+
 @media (pointer:coarse) {
     .cards:hover {
         transform: none;
