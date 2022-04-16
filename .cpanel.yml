@@ -9,6 +9,7 @@ deployment:
     - /bin/cp arka.html $DEPLOYPATH
     - /bin/cp butabi.html $DEPLOYPATH
     - /bin/cp contacts.html $DEPLOYPATH
+    - /bin/cp footer.html $DEPLOYPATH
     - /bin/cp home.html $DEPLOYPATH
     - /bin/cp klique.html $DEPLOYPATH
     - /bin/cp littlelayers.html $DEPLOYPATH
