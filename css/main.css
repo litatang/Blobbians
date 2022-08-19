@@ -12,6 +12,7 @@
     --butabired: #D5292B;
     --layersyellow: #FEA621;
     --setjangblack: #231C1D;
+    --skmblack: #01080E;
 }
 
 h1 {
@@ -613,12 +614,6 @@ padding-right: 6em;
     flex-wrap: nowrap;    
 }
 
-
-.service-col{    
-    /* padding-top: 7vh;
-    height: 85%;
-    height: calc(var(--vh, 1vh) * 85); */
-}
 .contact-container{
     height: 100vh; /* Fallback for browsers that do not support Custom Properties */
     height: calc(var(--vh, 1vh) * 100);
@@ -1123,6 +1118,17 @@ padding-right: 6em;
     padding-top: 6em;
 }
 
+.skm-container{
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--skmblack);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6em;
+}
+
 .naisu-logo{
     image-rendering: -moz-crisp-edges;         /* Firefox */
     image-rendering:   -o-crisp-edges;         /* Opera */
@@ -1205,6 +1211,10 @@ padding-right: 6em;
     height: 7vh;
     margin-top: -1em;
     cursor: pointer;
+}
+
+.porto-navigation-skm{
+    background-color: var(--skmblack);
 }
 
 .porto-navigation-setjang{
@@ -1317,6 +1327,15 @@ padding-right: 6em;
 .footer-number a {
     text-decoration:none;
     color: inherit;
+}
+
+.link-decor{
+    color: unset;
+}
+
+.link-decor:hover{
+    color: unset;
+    font-weight: bold;
 }
 
 @media (pointer:coarse) {
@@ -2052,9 +2071,6 @@ padding-right: 6em;
         width: 30vw;
     }
 
-    .service-col{
-        /* padding-top: 6vh; */
-    }
 
     .service-header {
         height: 80vh;
@@ -2150,9 +2166,6 @@ padding-right: 6em;
         height: 2.8em;
     }
 
-    .service-col{
-        /* padding-top: 6.5vh; */
-    }
 
 }
 
